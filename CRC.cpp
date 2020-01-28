@@ -43,10 +43,10 @@ void append(){																								//For Generating Codeword
 
 void crcverify()																								//For Verification of CRC
 {
-	int j;
-	for (j = 0; (j < (strlen(key) - 1)) && (CRC[j] != '1'); j++);
-	if (j < (strlen(key) - 1)) printf("\n\nVerification failed\n");
-	else printf("\n\nVerification is successful!\n");
+  if(strcmp(message, inp)==0)
+    printf("\nVerifiation Succesful");
+  else
+    printf("\nVerification Failed");
 }
 
 int main(){
